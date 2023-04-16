@@ -183,11 +183,23 @@ img {
 .hero-section {
   background: #2e2f42;
   padding: 188px 0px 188px 0px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office.optim.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 .hero-section-title {
   display: block;
   max-width: 496px;
-  margin: auto;
+  margin: 0 auto;
 
   font-style: normal;
   font-weight: 700;
@@ -345,12 +357,42 @@ img {
   padding: 100px 0;
   background: var(--color-navy-blue);
 }
+
 .footer-description {
   width: 264px;
   color: var(--color-cloud);
 }
 .link-footer {
   display: inline-block;
+}
+
+.peage-footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.peage-footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.peage-footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color);
+}
+.peage-footer-social-list-icon {
+  fill: #f4f4fd;
+}
+.peage-footer-social-list-link:focus,
+.peage-footer-social-list-link:hover {
+  background-color: #31d0aa;
 }
 
 /* portfolio */
@@ -425,6 +467,11 @@ img {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
+}
+.card-list :hover,
+.card-list :focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card-subtitle {
   margin-bottom: 8px;
