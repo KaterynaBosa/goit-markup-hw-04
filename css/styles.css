@@ -398,6 +398,12 @@ img {
 .peage-footer-social-list-link-team:hover {
   background-color: var(--color-ocean);
 }
+.footer-social-lista {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
 
 /* customers */
 
@@ -500,7 +506,7 @@ img {
 }
 .peage-footer-social-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   justify-content: center;
 }
 .peage-footer-social-list-item {
