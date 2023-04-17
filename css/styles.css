@@ -243,6 +243,17 @@ img {
   display: flex;
   gap: 24px;
 }
+.icon-container {
+  background: #f4f4fd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 100px;
+}
+.features-icon {
+  padding: 24px 100px;
+}
 .feature-title {
   line-height: 1.2;
 }
@@ -332,10 +343,12 @@ img {
 .team-position {
   line-height: 1.5;
   color: var(--color-slate);
-
   text-align: center;
 }
-
+.socials-item {
+}
+.socials-link {
+}
 /* Footer */
 .logo-footer {
   margin-right: 76px;
@@ -457,6 +470,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -468,11 +482,14 @@ img {
   border: 1px solid var(--color-cornflower);
   border-top: none;
 }
-.card-list :hover,
-.card-list :focus {
+.card-link {
+  display: block;
+}
+.card-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .card-subtitle {
   margin-bottom: 8px;
 }
